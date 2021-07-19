@@ -1,0 +1,115 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    font-family: 'Montserrat', sans-serif;
+    font-display: swap;
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a:active,
+a:focus {
+  extra-fdbtline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
+html {
+    --scrollbarBG: #cfd8dc;
+    --thumbBG: #90a4ae;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    height: auto;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+
+  #modal-form-main-div{
+    transition: .9s ease;
+}
+#book-modal-form-main-div{
+    transition: .9s ease;
+}
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+right: 0;
+background-color: #4CA9EE;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+color: #fff;
+display: block;
+transition: 0.3s;
+font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 18px;
+margin-left: 15px;
+}
+
+#sidebar-joinus
+{
+    background-color: #fff;
+    color: #4CA9EE;
+    padding:7px 30px;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+color: white;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
