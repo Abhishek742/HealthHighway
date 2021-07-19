@@ -181,6 +181,11 @@
     width: 33.3333333333%;
 }
   }
+@media (min-width:300px){
+.footer-extra{
+    margin-bottom:35px; 
+    }
+}
   @media only screen and (max-width: 1081px) {
     .footer-extra span{
         font-size: .9rem!important;
@@ -346,7 +351,7 @@
         margin-right: .3rem;
     }
   }
-
+  
   @media only screen and (max-width: 285px) {
     .footer-extra span{
         font-size: .75rem!important;
